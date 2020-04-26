@@ -27,10 +27,7 @@ const Layout = ({ children }) => {
       </Row>
       <Row justify="center" gutter={[16, 32]} style={{ textAlign: 'center' }}>
         <Col xs={20} md={12}>
-          <Menu
-            mode="horizontal"
-            selectedKeys={[key]}
-          >
+          <Menu mode="horizontal" selectedKeys={[key]}>
             <Menu.Item key="blog">
               <Link to="/blog">Blog</Link>
             </Menu.Item>

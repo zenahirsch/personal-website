@@ -13,18 +13,19 @@ const BlogIndex = ({ data }) => {
       <SEO title="Blog" />
       <List
         itemLayout="vertical"
-        size="large"
-        bordered
         dataSource={posts}
         renderItem={(post) => (
-          <List.Item key={post.node.id}>
+          <List.Item
+            key={post.node.id}
+            extra={post.node.published}
+            actions={[<Link to={`/blog/${post.node.slug}`}>Read more</Link>]}
+          >
             <List.Item.Meta
               title={
                 <Link to={`/blog/${post.node.slug}`}>{post.node.title}</Link>
               }
-              description={`Published on ${post.node.published}`}
+              description={post.node.summary}
             />
-            {post.node.summary}
           </List.Item>
         )}
       />
