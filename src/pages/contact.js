@@ -36,7 +36,7 @@ const ContactPage = () => {
       ],
     };
 
-    const response = await fetch(process.env.SLACK_WEBHOOK_URL, {
+    const response = await fetch(process.env.GATSBY_SLACK_WEBHOOK_URL, {
       method: 'POST',
       body: JSON.stringify(data),
     });
