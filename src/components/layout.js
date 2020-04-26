@@ -36,8 +36,8 @@ const Layout = ({ children }) => {
             <Menu.Item key="blog">
               <Link to="/blog">Blog</Link>
             </Menu.Item>
-            <Menu.Item key="github">
-              <a href="https://github.com/zenahirsch">Code</a>
+            <Menu.Item key="faq">
+              <Link to="/faq">FAQ</Link>
             </Menu.Item>
             <SubMenu title="Social Media">
               <Menu.Item key="instagram">
@@ -53,8 +53,8 @@ const Layout = ({ children }) => {
                 <a href="https://vimeo.com/zenahirsch">Vimeo</a>
               </Menu.Item>
             </SubMenu>
-            <Menu.Item key="faq">
-              <Link to="/faq">FAQ</Link>
+            <Menu.Item key="github">
+              <a href="https://github.com/zenahirsch">Code</a>
             </Menu.Item>
             <Menu.Item key="contact">
               <Link to="/contact">Contact</Link>
