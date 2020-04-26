@@ -8,6 +8,7 @@ import React from 'react';
 
 const { useBreakpoint } = Grid;
 const { Title, Text } = Typography;
+const { SubMenu } = Menu;
 
 const Layout = ({ children }) => {
   const screens = useBreakpoint();
@@ -36,11 +37,22 @@ const Layout = ({ children }) => {
               <Link to="/blog">Blog</Link>
             </Menu.Item>
             <Menu.Item key="github">
-              <a href="https://github.com/zenahirsch">GitHub</a>
+              <a href="https://github.com/zenahirsch">Code</a>
             </Menu.Item>
-            <Menu.Item key="instagram">
-              <a href="https://instagram.com/zehirsch">Instagram</a>
-            </Menu.Item>
+            <SubMenu title="Social Media">
+              <Menu.Item key="instagram">
+                <a href="https://instagram.com/zehirsch">Instagram</a>
+              </Menu.Item>
+              <Menu.Item key="linkedin">
+                <a href="https://www.linkedin.com/in/zenahirsch/">LinkedIn</a>
+              </Menu.Item>
+              <Menu.Item key="twitter">
+                <a href="https://twitter.com/zenahirsch">Twitter</a>
+              </Menu.Item>
+              <Menu.Item key="vimeo">
+                <a href="https://vimeo.com/zenahirsch">Vimeo</a>
+              </Menu.Item>
+            </SubMenu>
             <Menu.Item key="faq">
               <Link to="/faq">FAQ</Link>
             </Menu.Item>
