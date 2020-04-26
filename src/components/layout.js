@@ -9,6 +9,11 @@ import React from 'react';
 const { Title } = Typography;
 
 const Layout = ({ children }) => {
+  let key;
+  if (typeof window !== 'undefined') {
+    key = window.location.pathname.split('/')[1];
+  }
+
   return (
     <div style={{ margin: '100px 0' }}>
       <Row justify="center" gutter={[16, 32]} style={{ textAlign: 'center' }}>
@@ -24,7 +29,7 @@ const Layout = ({ children }) => {
         <Col xs={20} md={12}>
           <Menu
             mode="horizontal"
-            selectedKeys={[window.location.pathname.split('/')[1]]}
+            selectedKeys={[key]}
           >
             <Menu.Item key="blog">
               <Link to="/blog">Blog</Link>
