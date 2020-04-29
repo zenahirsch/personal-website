@@ -1,9 +1,8 @@
 import './layout.css';
 
 import { FireTwoTone } from '@ant-design/icons';
-import { Col, Grid, Menu, Row, Typography, Space } from 'antd';
+import { Col, Grid, Menu, Row, Typography } from 'antd';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -61,26 +60,15 @@ const Layout = ({ children }) => {
       </Row>
       <Row justify="center" gutter={[16, 32]}>
         <Col xs={20} md={12}>
-          <div style={{ minHeight: 'calc(100vh - 415px)' }}>
-            {children}
-          </div>
+          <div style={{ minHeight: 'calc(100vh - 415px)' }}>{children}</div>
         </Col>
       </Row>
       <Row justify="center" align="middle" gutter={[16, 32]}>
         <Col xs={20} md={12} style={{ textAlign: 'center' }}>
           <Text type="secondary">
-            <Space direction={screens.xs ? 'vertical' : 'horizontal'} size={1}>
-              <div>Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>, <a href="https://ant.design/">Ant Design</a> and</div>
-              <a href="https://buttercms.com/" style={{ display: 'inline-block' }}>
-                <Img
-                  fixed={data.file.childImageSharp.fixed}
-                  draggable={false}
-                  fadeIn={false}
-                  style={{ opacity: 0.65, verticalAlign: 'middle' }}
-                  alt="ButterCMS logo"
-                />
-              </a>
-            </Space>
+            Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>,{' '}
+            <a href="https://ant.design/">Ant Design</a> and{' '}
+            <a href="https://forestry.io/">Forestry</a>.
           </Text>
         </Col>
       </Row>

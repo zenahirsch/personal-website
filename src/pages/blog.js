@@ -22,7 +22,9 @@ const BlogIndex = ({ data }) => {
           >
             <List.Item.Meta
               title={
-                <Link to={post.node.frontmatter.path}>{post.node.frontmatter.title}</Link>
+                <Link to={post.node.frontmatter.path}>
+                  {post.node.frontmatter.title}
+                </Link>
               }
               description={post.node.frontmatter.summary}
             />
