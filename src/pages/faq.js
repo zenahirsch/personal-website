@@ -8,12 +8,7 @@ import SEO from '../components/seo';
 const { Title } = Typography;
 
 const FAQPage = ({ data }) => {
-  const faqs = [
-    {
-      question: 'Why?',
-      answer: '<p>Because!</p>',
-    },
-  ];
+  const faqs = data.markdownRemark.frontmatter.faq;
 
   return (
     <Layout>
@@ -29,3 +24,17 @@ const FAQPage = ({ data }) => {
 };
 
 export default FAQPage;
+
+export const pageQuery = graphql`
+  query($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      frontmatter {
+        path
+        faq {
+          question
+          answer
+        }
+      }
+    }
+  }
+`;
