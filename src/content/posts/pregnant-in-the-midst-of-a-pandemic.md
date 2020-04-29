@@ -1,8 +1,9 @@
 ---
 path: "/blog/pregnant-in-the-midst-of-a-pandemic"
-date: 2020-04-25T00:00:00-04:00
+date: 2020-04-25T04:00:00.000+00:00
 title: Pregnant in the midst of a pandemic
 summary: I'm pregnant. There's a pandemic going on. And it's totally fine.
+slug: pregnant-in-the-midst-of-a-pandemic
 
 ---
 I'm pregnant. There's a pandemic going on. And it's totally fine.
