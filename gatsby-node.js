@@ -1,4 +1,6 @@
-const path = require(`path`);
+const path = require('path');
+const remark = require('remark');
+const remarkHTML = require('remark-html');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
@@ -57,4 +59,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {}, // additional data can be passed via context
     });
   });
+};
+
+exports.onCreateNode = ({ node, actions: { createNodeField } }) => {
+  const { frontmatter } = node;
+
+  // If the frontmatter contains `faq`, parse
+  // the markdown contained therein.
+  if (frontmatter && frontmatter.faq) {
+    const value = frontmatter.faq.map(faq => ({
+      question: faq.question,
+      answer: remark().use(remarkHTML).processSync(faq.answer).toString(),
+    }));
+
+    createNodeField({
+      name: 'faqhtml',
+      node,
+      value,
+    });
+  }
 };
