@@ -2,7 +2,7 @@ import './layout.css';
 
 import { FireTwoTone } from '@ant-design/icons';
 import { Col, Grid, Menu, Row, Typography } from 'antd';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -11,18 +11,6 @@ const { Title, Text } = Typography;
 
 const Layout = ({ children }) => {
   const screens = useBreakpoint();
-
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "butter-b.png" }) {
-        childImageSharp {
-          fixed(width: 125) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `);
 
   let key;
   if (typeof window !== 'undefined') {
@@ -68,7 +56,7 @@ const Layout = ({ children }) => {
           <Text type="secondary">
             Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>,{' '}
             <a href="https://ant.design/">Ant Design</a> and{' '}
-            <a href="https://forestry.io/">Forestry</a>.
+            <a href="https://forestry.io/">Forestry.io</a>.
           </Text>
         </Col>
       </Row>
