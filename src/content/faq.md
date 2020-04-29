@@ -17,14 +17,14 @@ faq:
   answer: |-
     Here are some of my favorites:
 
-    Chrono Trigger
-    Earthbound
-    Legend of Zelda: Ocarina of Time
-    Age of Empires III
-    Cities: Skylines
-    Bravely Default
-    World of Warcraft
-    Hyrule Warriors
+    * Chrono Trigger
+    * Earthbound
+    * Legend of Zelda: Ocarina of Time
+    * Age of Empires III
+    * Cities: Skylines
+    * Bravely Default
+    * World of Warcraft
+    * Hyrule Warriors
 - question: What font is this?
   answer: It's Nunito.
 
