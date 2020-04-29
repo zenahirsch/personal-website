@@ -2,6 +2,8 @@
 title: FAQ
 path: "/faq"
 faq:
+- question: What font is this?
+  answer: It's Nunito.
 - question: Which video games do you like?
   answer: |-
     Here are some of my favorites:
