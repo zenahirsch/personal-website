@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url:
+webhook_url: 
 sections:
 - type: document
   path: src/content/home.md
@@ -27,8 +27,6 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_env:
-  - GATSBY_SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
   preview_output_directory: public
   install_dependencies_command: yarn install
   preview_docker_image: node:10
