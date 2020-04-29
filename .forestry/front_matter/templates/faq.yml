@@ -29,3 +29,5 @@ fields:
     max: 
     labelField: 
   label: FAQ
+pages:
+- src/content/faq.md
