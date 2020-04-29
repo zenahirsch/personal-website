@@ -6,15 +6,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const BlogIndex = ({ data }) => {
-  const posts = [
-    {
-      id: 'post-id',
-      date: '2020-04-29',
-      slug: 'post-slug',
-      title: 'This is the title',
-      description: 'This is the description.',
-    },
-  ];
+  const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout>
@@ -24,15 +16,15 @@ const BlogIndex = ({ data }) => {
         dataSource={posts}
         renderItem={(post) => (
           <List.Item
-            key={post.id}
-            extra={post.date}
-            actions={[<Link to={`/blog/${post.slug}`}>Read more</Link>]}
+            key={post.node.id}
+            extra={post.node.frontmatter.date}
+            actions={[<Link to={post.node.frontmatter.path}>Read more</Link>]}
           >
             <List.Item.Meta
               title={
-                <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                <Link to={post.node.frontmatter.path}>{post.node.frontmatter.title}</Link>
               }
-              description={post.description}
+              description={post.node.frontmatter.summary}
             />
           </List.Item>
         )}
@@ -42,3 +34,22 @@ const BlogIndex = ({ data }) => {
 };
 
 export default BlogIndex;
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            summary
+          }
+        }
+      }
+    }
+  }
+`;
