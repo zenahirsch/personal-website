@@ -31,12 +31,12 @@ const BlogPostTemplate = ({ data }) => {
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query($slug: String!) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        path
+        slug
         title
         summary
       }

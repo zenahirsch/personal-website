@@ -18,11 +18,11 @@ const BlogIndex = ({ data }) => {
           <List.Item
             key={post.node.id}
             extra={post.node.frontmatter.date}
-            actions={[<Link to={post.node.frontmatter.path}>Read more</Link>]}
+            actions={[<Link to={`/blog/${post.node.frontmatter.slug}`}>Read more</Link>]}
           >
             <List.Item.Meta
               title={
-                <Link to={post.node.frontmatter.path}>
+                <Link to={`/blog/${post.node.frontmatter.slug}`}>
                   {post.node.frontmatter.title}
                 </Link>
               }
@@ -46,10 +46,9 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
-            path
+            slug
             title
             summary
           }
