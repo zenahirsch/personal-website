@@ -4,16 +4,23 @@ hide_body: false
 fields:
 - type: text
   name: path
-  label: path
+  label: Path
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Date
+  config:
+    required: true
+  default: now
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - type: text
   name: summary
-  label: summary
+  label: Summary
 pages:
 - src/content/posts/pregnant-in-the-midst-of-a-pandemic.md
 - src/content/posts/zendesk-ticket-history-v1-0-6-exclude-archived-tickets-option.md
