@@ -67,7 +67,7 @@ exports.onCreateNode = ({ node, actions: { createNodeField } }) => {
   // If the frontmatter contains `faq`, parse
   // the markdown contained therein.
   if (frontmatter && frontmatter.faq) {
-    const value = frontmatter.faq.map(faq => ({
+    const value = frontmatter.faq.map((faq) => ({
       question: faq.question,
       answer: remark().use(remarkHTML).processSync(faq.answer).toString(),
     }));
