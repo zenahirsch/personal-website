@@ -1,8 +1,9 @@
 ---
 path: "/blog/zendesk-ticket-history-v106-new-exclude-archived-tickets-option"
-date: 2020-04-28T00:00:00-04:00
+date: 2020-04-28T04:00:00.000+00:00
 title: 'Zendesk Ticket History v1.0.6: "Exclude archived tickets" option'
 summary: Yesterday, the latest version of my Zendesk app, Ticket History, was released.
+slug: zendesk-ticket-history-v106-new-exclude-archived-tickets-option
 
 ---
 I write a lot of [Zendesk](https://www.zendesk.com/) apps for work, most of which are only used internally at my company. One has been released for free (and [open-source](https://github.com/vimeo/zendesk-ticket-history/)) to the general public. It's a simple app called Ticket History, which shows a list of the requester's _other_ tickets when viewing a ticket. This allows agents to have a better understanding of how many times a customer has reached out, what topics they tend to write in about, and how their interactions with support have gone in the past (by showing the satisfaction rating alongside each ticket).
