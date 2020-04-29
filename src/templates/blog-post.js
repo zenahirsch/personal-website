@@ -9,14 +9,15 @@ import SEO from '../components/seo';
 const { Title, Text } = Typography;
 
 const BlogPostTemplate = ({ data }) => {
-  const post = data.allButterPost.edges[0].node;
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
 
   return (
     <Layout>
-      <SEO title={post.seo_title} description={post.description} />
-      <Text type="secondary">{post.published}</Text>
-      <Title level={3}>{post.title}</Title>
-      <div dangerouslySetInnerHTML={{ __html: post.body }} />
+      <SEO title={frontmatter.title} description={frontmatter.description} />
+      <Text type="secondary">{frontmatter.date}</Text>
+      <Title level={3}>{frontmatter.title}</Title>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
       <Divider>
         <FireTwoTone twoToneColor="#ffd591" />
       </Divider>
@@ -30,20 +31,14 @@ const BlogPostTemplate = ({ data }) => {
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    allButterPost(filter: { slug: { eq: $slug } }) {
-      edges {
-        node {
-          id
-          body
-          title
-          seo_title
-          published(formatString: "MMMM D, YYYY")
-          author {
-            first_name
-            last_name
-          }
-        }
+  query($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        path
+        title
+        description
       }
     }
   }

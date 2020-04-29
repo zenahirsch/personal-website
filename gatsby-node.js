@@ -1,46 +1,36 @@
-const path = require('path');
+const path = require(`path`);
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-
-  const blogPost = path.resolve('./src/templates/blog-post.js');
-
-  let posts;
-  try {
-    posts = await graphql(`
-      {
-        allButterPost {
-          edges {
-            node {
-              id
-              seo_title
-              slug
-              author {
-                first_name
-                last_name
-                email
-                slug
-                profile_image
-              }
-              body
+  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
             }
           }
         }
       }
-    `);
-  } catch (error) {
-    console.log('Error Running Querying Posts', error);
+    }
+  `);
+
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild('Error while running GraphQL query.');
+    return;
   }
 
-  posts = posts.data.allButterPost.edges;
-
-  posts.forEach((post, index) => {
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: `/blog/${post.node.slug}`,
-      component: blogPost,
-      context: {
-        slug: post.node.slug,
-      },
+      path: node.frontmatter.path,
+      component: blogPostTemplate,
+      context: {}, // additional data can be passed via context
     });
   });
 };

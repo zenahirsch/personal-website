@@ -6,7 +6,15 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const BlogIndex = ({ data }) => {
-  const posts = data.allButterPost.edges;
+  const posts = [
+    {
+      id: 'post-id',
+      date: '2020-04-29',
+      slug: 'post-slug',
+      title: 'This is the title',
+      description: 'This is the description.',
+    },
+  ];
 
   return (
     <Layout>
@@ -16,15 +24,15 @@ const BlogIndex = ({ data }) => {
         dataSource={posts}
         renderItem={(post) => (
           <List.Item
-            key={post.node.id}
-            extra={post.node.published}
-            actions={[<Link to={`/blog/${post.node.slug}`}>Read more</Link>]}
+            key={post.id}
+            extra={post.date}
+            actions={[<Link to={`/blog/${post.slug}`}>Read more</Link>]}
           >
             <List.Item.Meta
               title={
-                <Link to={`/blog/${post.node.slug}`}>{post.node.title}</Link>
+                <Link to={`/blog/${post.slug}`}>{post.title}</Link>
               }
-              description={post.node.summary}
+              description={post.description}
             />
           </List.Item>
         )}
@@ -34,20 +42,3 @@ const BlogIndex = ({ data }) => {
 };
 
 export default BlogIndex;
-
-export const pageQuery = graphql`
-  query {
-    allButterPost(sort: { fields: published, order: DESC }) {
-      edges {
-        node {
-          id
-          title
-          slug
-          body
-          summary
-          published(formatString: "MMMM D, YYYY")
-        }
-      }
-    }
-  }
-`;

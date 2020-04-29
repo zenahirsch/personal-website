@@ -8,7 +8,12 @@ import SEO from '../components/seo';
 const { Title } = Typography;
 
 const FAQPage = ({ data }) => {
-  const { faqs } = data.butterPage;
+  const faqs = [
+    {
+      question: 'Why?',
+      answer: '<p>Because!</p>',
+    },
+  ];
 
   return (
     <Layout>
@@ -24,14 +29,3 @@ const FAQPage = ({ data }) => {
 };
 
 export default FAQPage;
-
-export const query = graphql`
-  {
-    butterPage(slug: { eq: "faq" }) {
-      faqs {
-        question
-        answer
-      }
-    }
-  }
-`;
