@@ -26,8 +26,8 @@ const FAQPage = ({ data }) => {
 export default FAQPage;
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query {
+    markdownRemark(frontmatter: { path: { eq: "/faq" } }) {
       frontmatter {
         path
         faq {
