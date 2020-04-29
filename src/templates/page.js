@@ -1,29 +1,34 @@
+import { Typography } from 'antd';
 import { graphql } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const IndexPage = ({ data }) => {
+const { Title } = Typography;
+
+const PageTemplate = ({ data }) => {
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
+
   return (
     <Layout>
-      <SEO title="Home" />
-      <div dangerouslySetInnerHTML={{ __html: '<p>Hi</p>' }} />
+      <SEO title={frontmatter.title} />
+      <Title level={3}>{frontmatter.title}</Title>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
 };
 
-export default IndexPage;
+export default PageTemplate;
 
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         path
         title
-        summary
       }
     }
   }
