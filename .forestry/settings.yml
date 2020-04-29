@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: document
-  path: src/content/faq.md
-  label: FAQ
 - type: directory
   path: src/content/posts
   label: Posts
@@ -21,6 +18,11 @@ sections:
   match: "**/*"
   templates:
   - page
+- type: heading
+  label: Single Pages
+- type: document
+  path: src/content/faq.md
+  label: FAQ
 upload_dir: static/uploads
 public_path: "/static/uploads"
 front_matter_path: ''
