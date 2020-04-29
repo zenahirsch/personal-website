@@ -5,8 +5,10 @@ fields:
 - name: path
   type: text
   config:
-    required: false
+    required: true
   label: Path
+  hidden: false
+  default: ''
 - name: faq
   type: field_group_list
   fields:
