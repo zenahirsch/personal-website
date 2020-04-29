@@ -8,3 +8,5 @@ fields:
     required: false
   label: Title
   description: Title of the page
+pages:
+- src/content/pages/home.md
