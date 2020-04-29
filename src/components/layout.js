@@ -1,19 +1,30 @@
 import './layout.css';
 
 import { FireTwoTone } from '@ant-design/icons';
-import { Col, Grid, Menu, Row, Typography } from 'antd';
-import { Link } from 'gatsby';
+import { Col, Grid, Menu, Row, Typography, Space } from 'antd';
+import { Link, graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const { useBreakpoint } = Grid;
 const { Title, Text } = Typography;
-const { SubMenu } = Menu;
 
 const Layout = ({ children }) => {
   const screens = useBreakpoint();
 
-  console.log('screens', screens);
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "butter-b.png" }) {
+        childImageSharp {
+          fixed(width: 125) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
+
   let key;
   if (typeof window !== 'undefined') {
     key = window.location.pathname.split('/')[1];
@@ -39,20 +50,6 @@ const Layout = ({ children }) => {
             <Menu.Item key="faq">
               <Link to="/faq">FAQ</Link>
             </Menu.Item>
-            <SubMenu title="Social Media">
-              <Menu.Item key="instagram">
-                <a href="https://instagram.com/zehirsch">Instagram</a>
-              </Menu.Item>
-              <Menu.Item key="linkedin">
-                <a href="https://www.linkedin.com/in/zenahirsch/">LinkedIn</a>
-              </Menu.Item>
-              <Menu.Item key="twitter">
-                <a href="https://twitter.com/zenahirsch">Twitter</a>
-              </Menu.Item>
-              <Menu.Item key="vimeo">
-                <a href="https://vimeo.com/zenahirsch">Vimeo</a>
-              </Menu.Item>
-            </SubMenu>
             <Menu.Item key="github">
               <a href="https://github.com/zenahirsch">Code</a>
             </Menu.Item>
@@ -64,17 +61,26 @@ const Layout = ({ children }) => {
       </Row>
       <Row justify="center" gutter={[16, 32]}>
         <Col xs={20} md={12}>
-          {children}
+          <div style={{ minHeight: 'calc(100vh - 415px)' }}>
+            {children}
+          </div>
         </Col>
       </Row>
-      <Row justify="center" gutter={[16, 32]} style={{ textAlign: 'center' }}>
-        <Col xs={20} md={12}>
+      <Row justify="center" align="middle" gutter={[16, 32]}>
+        <Col xs={20} md={12} style={{ textAlign: 'center' }}>
           <Text type="secondary">
-            &copy; 2020 by Zena Hirsch.
-            <br />
-            Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>,{' '}
-            <a href="https://buttercms.com">ButterCMS</a> and{' '}
-            <a href="https://ant.design">Ant Design</a>.
+            <Space direction={screens.xs ? 'vertical' : 'horizontal'} size={1}>
+              <div>Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>, <a href="https://ant.design/">Ant Design</a> and</div>
+              <a href="https://buttercms.com/" style={{ display: 'inline-block' }}>
+                <Img
+                  fixed={data.file.childImageSharp.fixed}
+                  draggable={false}
+                  fadeIn={false}
+                  style={{ opacity: 0.65, verticalAlign: 'middle' }}
+                  alt="ButterCMS logo"
+                />
+              </a>
+            </Space>
           </Text>
         </Col>
       </Row>
