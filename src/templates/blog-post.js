@@ -14,7 +14,7 @@ const BlogPostTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={frontmatter.title} description={frontmatter.description} />
+      <SEO title={frontmatter.title} description={frontmatter.summary} />
       <Text type="secondary">{frontmatter.date}</Text>
       <Title level={3}>{frontmatter.title}</Title>
       <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -38,7 +38,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
-        description
+        summary
       }
     }
   }

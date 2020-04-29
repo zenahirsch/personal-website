@@ -3,7 +3,6 @@ new_page_extension: md
 auto_deploy: false
 admin_path: /static/admin
 webhook_url:
-sections:
 upload_dir: static/uploads
 public_path: "/static/uploads"
 front_matter_path: ''
@@ -11,11 +10,11 @@ use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: public
-  install_dependencies_command: npm install
+  install_dependencies_command: yarn install
   preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run forestry:preview
+  instant_preview_command: yarn run forestry:preview
 sections:
 - type: directory
   path: src/content/posts

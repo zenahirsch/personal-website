@@ -18,9 +18,9 @@ fields:
     description: ""
     config:
       required: true
-  - name: desription
+  - name: summary
     type: text
-    label: Description
+    label: Summary
     description: ""
     config:
       required: true
