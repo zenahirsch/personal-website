@@ -1,46 +1,81 @@
 const path = require('path');
+const remark = require('remark');
+const remarkHTML = require('remark-html');
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-
-  const blogPost = path.resolve('./src/templates/blog-post.js');
-
-  let posts;
-  try {
-    posts = await graphql(`
-      {
-        allButterPost {
-          edges {
-            node {
-              id
-              seo_title
-              slug
-              author {
-                first_name
-                last_name
-                email
-                slug
-                profile_image
-              }
-              body
+  const blogPostTemplate = path.resolve('src/templates/blog-post.js');
+  const pageTemplate = path.resolve('src/templates/page.js');
+  const result = await graphql(`
+    {
+      Posts: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(posts)/" } }
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
             }
           }
         }
       }
-    `);
-  } catch (error) {
-    console.log('Error Running Querying Posts', error);
+
+      Pages: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(pages)/" } }
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild('Error while running GraphQL query.');
+    return;
   }
 
-  posts = posts.data.allButterPost.edges;
-
-  posts.forEach((post, index) => {
+  result.data.Posts.edges.forEach(({ node }) => {
     createPage({
-      path: `/blog/${post.node.slug}`,
-      component: blogPost,
-      context: {
-        slug: post.node.slug,
-      },
+      path: node.frontmatter.path,
+      component: blogPostTemplate,
+      context: {}, // additional data can be passed via context
     });
   });
+
+  result.data.Pages.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: pageTemplate,
+      context: {}, // additional data can be passed via context
+    });
+  });
+};
+
+exports.onCreateNode = ({ node, actions: { createNodeField } }) => {
+  const { frontmatter } = node;
+
+  // If the frontmatter contains `faq`, parse
+  // the markdown contained therein.
+  if (frontmatter && frontmatter.faq) {
+    const value = frontmatter.faq.map(faq => ({
+      question: faq.question,
+      answer: remark().use(remarkHTML).processSync(faq.answer).toString(),
+    }));
+
+    createNodeField({
+      name: 'faqhtml',
+      node,
+      value,
+    });
+  }
 };

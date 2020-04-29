@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const BlogIndex = ({ data }) => {
-  const posts = data.allButterPost.edges;
+  const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout>
@@ -17,14 +17,16 @@ const BlogIndex = ({ data }) => {
         renderItem={(post) => (
           <List.Item
             key={post.node.id}
-            extra={post.node.published}
-            actions={[<Link to={`/blog/${post.node.slug}`}>Read more</Link>]}
+            extra={post.node.frontmatter.date}
+            actions={[<Link to={post.node.frontmatter.path}>Read more</Link>]}
           >
             <List.Item.Meta
               title={
-                <Link to={`/blog/${post.node.slug}`}>{post.node.title}</Link>
+                <Link to={post.node.frontmatter.path}>
+                  {post.node.frontmatter.title}
+                </Link>
               }
-              description={post.node.summary}
+              description={post.node.frontmatter.summary}
             />
           </List.Item>
         )}
@@ -37,15 +39,20 @@ export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
-    allButterPost(sort: { fields: published, order: DESC }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/(posts)/" } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           id
-          title
-          slug
-          body
-          summary
-          published(formatString: "MMMM D, YYYY")
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            summary
+          }
         }
       }
     }

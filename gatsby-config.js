@@ -4,49 +4,50 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Zena Elizabeth Hirsch`,
-    description: `The personal website of Zena Elizabeth Hirsch.`,
-    author: `@zenahirsch`,
+    title: 'Zena Elizabeth Hirsch',
+    description: 'The personal website of Zena Elizabeth Hirsch.',
+    author: '@zenahirsch',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `Zena Elizabeth Hirsch`,
-        short_name: `Zena Elizabeth Hirsch`,
-        description: `The personal website of Zena Elizabeth Hirsch`,
-        start_url: `/`,
-        background_color: `#fa8c16`,
-        theme_color: `#fa8c16`,
-        display: `minimal-ui`,
-        icon: `src/images/fire.png`, // This path is relative to the root of the site.
+        name: 'content',
+        path: `${__dirname}/src/content`,
+      },
+    },
+    'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Zena Elizabeth Hirsch',
+        short_name: 'Zena Elizabeth Hirsch',
+        description: 'The personal website of Zena Elizabeth Hirsch',
+        start_url: '/',
+        background_color: '#fa8c16',
+        theme_color: '#fa8c16',
+        display: 'minimal-ui',
+        icon: 'src/images/fire.png', // This path is relative to the root of the site.
       },
     },
     {
-      resolve: `gatsby-source-buttercms`,
-      options: {
-        authToken: process.env.BUTTER_AUTH_TOKEN,
-        pages: ['index', 'faq'],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-antd`,
+      resolve: 'gatsby-plugin-antd',
       options: {
         style: true,
       },
     },
     {
-      resolve: `gatsby-plugin-less`,
+      resolve: 'gatsby-plugin-less',
       options: {
         modifyVars: {
           'primary-color': '@orange-6',

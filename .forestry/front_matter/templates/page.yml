@@ -1,0 +1,18 @@
+---
+label: Page
+hide_body: false
+fields:
+- name: path
+  type: text
+  config:
+    required: false
+  label: Path
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Title of the page
+pages:
+- src/content/pages/home.md
+- src/content/pages/this-is-a-test-page.md

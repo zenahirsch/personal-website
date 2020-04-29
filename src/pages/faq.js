@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 const { Title } = Typography;
 
 const FAQPage = ({ data }) => {
-  const { faqs } = data.butterPage;
+  const faqs = data.markdownRemark.fields.faqhtml;
 
   return (
     <Layout>
@@ -25,12 +25,16 @@ const FAQPage = ({ data }) => {
 
 export default FAQPage;
 
-export const query = graphql`
-  {
-    butterPage(slug: { eq: "faq" }) {
-      faqs {
-        question
-        answer
+// The faq content is found in `fields` because it has
+// been processed by the onCreateNode hook (gatsby-node.js).
+export const pageQuery = graphql`
+  query {
+    markdownRemark(frontmatter: { path: { eq: "/faq" } }) {
+      fields {
+        faqhtml {
+          question
+          answer
+        }
       }
     }
   }
