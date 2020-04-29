@@ -2,6 +2,9 @@
 title: FAQ
 path: "/faq"
 faq:
+- question: Who are you?
+  answer: I'm a web developer and human female who lives in Grand Rapids, MI by way
+    of NYC, Wisconsin, and New Jersey. I currently work at Vimeo.
 - question: Why?
   answer: Why not?
 
