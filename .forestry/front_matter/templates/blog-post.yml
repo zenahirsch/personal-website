@@ -1,0 +1,16 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- type: text
+  name: path
+  label: path
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: title
+  label: title
+- type: text
+  name: summary
+  label: summary
