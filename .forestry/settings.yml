@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/content/faq.md
   label: FAQ
-  match: "**/*"
 - type: directory
   path: src/content/posts
   label: Posts
@@ -22,7 +21,6 @@ sections:
   match: "**/*"
   templates:
   - page
-  - faq
 upload_dir: static/uploads
 public_path: "/static/uploads"
 front_matter_path: ''
