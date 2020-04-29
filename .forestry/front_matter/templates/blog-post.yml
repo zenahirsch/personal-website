@@ -16,3 +16,4 @@ fields:
   label: summary
 pages:
 - src/content/posts/pregnant-in-the-midst-of-a-pandemic.md
+- src/content/posts/zendesk-ticket-history-v1-0-6-exclude-archived-tickets-option.md
