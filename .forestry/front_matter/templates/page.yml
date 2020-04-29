@@ -5,7 +5,7 @@ fields:
 - name: path
   type: text
   config:
-    required: false
+    required: true
   label: Path
 - name: title
   type: text
