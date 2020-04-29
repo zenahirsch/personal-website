@@ -15,4 +15,3 @@ fields:
   description: Title of the page
 pages:
 - src/content/pages/home.md
-- src/content/pages/this-is-a-test-page.md
