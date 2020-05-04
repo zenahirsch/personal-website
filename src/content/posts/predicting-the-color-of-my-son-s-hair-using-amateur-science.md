@@ -12,7 +12,7 @@ Lately, I've been wondering if my unborn son will have red hair. (Because there'
 
 I view red hair as something of a mixed blessing. Without a doubt, redheads are highly stereotyped and often treated with prejudice, both positively and negatively. Red hair is often objectively beautiful, but also comes with the stigma of standing out, of feeling like an _other_. Harvey's book goes into this subject in detail, and I highly recommend it for any redheads out there looking to make sense of a lifetime of complicated feelings.
 
-While I certainly want my child to be unique and beautiful, I also want to protect him from some of these prejudices. No matter the outcome, there will be a bright side and a dark side. 
+While I certainly want my child to be unique and beautiful, I also want to protect him from some of these prejudices. No matter the outcome, there will be a bright side and a dark side.
 
 I also want to mention that I hate the term "ginger," especially when used as a noun. But that will be a post for another time. Yes, I'll talk about that South Park episode.
 
@@ -27,58 +27,78 @@ Each marker has a few possible configurations of nucleic bases (guanine, thymine
 Here's where my husband and I fall for these markers:
 
 ### Me
-| Gene | Marker | Variant |
-| --- | --- | --- |
-| MC1R | rs1805007 | C/T |
-| MC1R | rs1805008 | C/T |
-| MC1R | i3002507 | G/G |
 
+    +------+-----------+---------+
+    | Gene | Marker    | Variant |
+    +------+-----------+---------+
+    | MC1R | rs1805007 | CT      |
+    +------+-----------+---------+
+    | MC1R | rs1805008 | CT      |
+    +------+-----------+---------+
+    | MC1R | i3002507  | GG      |
+    +------+-----------+---------+
 
 ### Husband
-| Gene | Marker | Variant |
-| --- | --- | --- |
-| MC1R | rs1805007 | C/C |
-| MC1R | rs1805008 | C/C |
-| MC1R | i3002507 | G/G |
 
-The variants in bold are associated with red hair. As you can see, I have two of them, while my husband has none.
+    +------+-----------+---------+
+    | Gene | Marker    | Variant |
+    +------+-----------+---------+
+    | MC1R | rs1805007 | CC      |
+    +------+-----------+---------+
+    | MC1R | rs1805008 | CC      |
+    +------+-----------+---------+
+    | MC1R | i3002507  | GG      |
+    +------+-----------+---------+
+
+As you can see, I have two of them, while my husband has none.
 
 The next step was to make some old-fashioned Punnett squares for each marker, to see the possible combinations our child could inherit.
 
 ### rs1805007
-|  |  |  |  |
-| :---: | :---: | :---: | :---: |
-|  |  | C | T |
-|  | C | CC | CT |
-|  | C | CC | CT |
 
+    +---+----+----+
+    |   | C  | T  |
+    +---+----+----+
+    | C | CC | CT |
+    +---+----+----+
+    | C | CC | CT |
+    +---+----+----+
 
 ### rs1805008
-|  |  |  |  |
-| :---: | :---: | :---: | :---: |
-|  |  | C | T |
-|  | C | CC | CT |
-|  | C | CC | CT |
 
+    +---+----+----+
+    |   | C  | T  |
+    +---+----+----+
+    | C | CC | CT |
+    +---+----+----+
+    | C | CC | CT |
+    +---+----+----+
 
 ### i3002507
-|  |  |  |  |
-| :---: | :---: | :---: | :---: |
-|  |  | G | G |
-|  | G | GG | GG |
-|  | G | GG | GG |
 
+    +---+----+----+
+    |   | G  | G  |
+    +---+----+----+
+    | G | GG | GG |
+    +---+----+----+
+    | G | GG | GG |
+    +---+----+----+
 
 ## Overall likelihood
 
 In order to manifest red hair, a person must have two of these variants. So the outcomes look like this:
 
-|  |  |  |  |
-| --- | --- | --- | --- |
-| CC | CC | GG | 25% |
-| CC | CT | GG | 25% |
-| CT | CC | GG | 25% |
-| CT | CT | GG | 25% |
+    +--------------+-------------+
+    | Variants     | Probability |
+    +----+----+----+-------------+
+    | CC | CC | GG | 25%         |
+    +----+----+----+-------------+
+    | CT | CC | GG | 25%         |
+    +----+----+----+-------------+
+    | CC | CT | GG | 25%         |
+    +----+----+----+-------------+
+    | CT | CT | GG | 25%         |
+    +----+----+----+-------------+
 
 Only the very last combination could result in red hair, which means there is a 25% chance of that happening. Of. course, all of this is very theoretical. I sought the insight of a stranger on the Internet with some knowledge in this area, who said a lot of complicated things that I didn't understand; the gist of it was that if I inherited the Ts in my first two markers from each parent (one from my father and one from my mother), it's likely that the chromosome I pass on will only have one T (CTG or TCG). This means the fourth combination in the table above would be impossible, and therefore my chances of having a baby with red hair would be 0%. That being said, there are other mutations that control hair color, and this analysis only scratches the surface. Anything is still possible.
 
