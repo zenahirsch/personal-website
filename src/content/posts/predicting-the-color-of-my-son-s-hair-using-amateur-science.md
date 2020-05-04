@@ -22,7 +22,7 @@ I suppose I should say up front that I have next to no real understanding of gen
 
 The first thing I learned is that red hair is most often controlled by the [MC1R gene](https://en.wikipedia.org/wiki/Melanocortin_1_receptor), which lives on chromosome 16 (there are, of course, exceptions to this). On this gene, there are three markers, also known as SNPs, that are associated with red hair—that 23andMe assesses. In actuality, there are other variations out there that could cause red hair, but 23andMe doesn't look at those, so I have to go with the data I have. The markers I know about are given the delightfully engaging names of [rs1805007](https://www.snpedia.com/index.php/Rs1805007), [rs1805008](https://www.snpedia.com/index.php/Rs1805008), and [i3002507](https://www.snpedia.com/index.php/Rs1805009).
 
-Each marker has a few possible configurations of nucleic bases (guanine, thymine, adenine, uracil). Some of these configurations are very common, others are more rare. For example, for most folks, rs1805007 is composed of C/C. Variants associated with red hair include C/T and T/T.
+Each marker has a few possible configurations of nucleic bases (guanine, thymine, adenine, uracil). Some of these configurations are very common, others are more rare. For the first two markers, `CC` represents the majority of humans, while `CT` or `TT` are associated with red hair. For i3002507, `GG` is common, while `CG` and `CC` are more commonly associated with red hair.
 
 Here's where my husband and I fall for these markers:
 
@@ -86,7 +86,7 @@ The next step was to make some old-fashioned Punnett squares for each marker, to
 
 ## Overall likelihood
 
-In order to manifest red hair, a person must have two of these variants. So the outcomes look like this:
+In order to manifest red hair, a person must have two of the red hair variants. So the outcomes look like this:
 
     +--------------+-------------+
     | Variants     | Probability |
