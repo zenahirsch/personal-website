@@ -1,9 +1,11 @@
-import { List } from 'antd';
+import { List, Typography } from 'antd';
 import { Link, graphql } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+
+const { Paragraph } = Typography;
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
@@ -17,8 +19,10 @@ const BlogIndex = ({ data }) => {
         renderItem={(post) => (
           <List.Item
             key={post.node.id}
-            extra={post.node.frontmatter.date}
-            actions={[<Link to={`/blog/${post.node.frontmatter.slug}`}>Read more</Link>]}
+            actions={[
+              <Paragraph>{post.node.frontmatter.date}</Paragraph>,
+              <Link to={`/blog/${post.node.frontmatter.slug}`}>Read more</Link>,
+            ]}
           >
             <List.Item.Meta
               title={
