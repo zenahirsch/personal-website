@@ -8,7 +8,7 @@ summary: I don't know anything about genetics, so here's an in-depth analysis of
 ---
 Lately, I've been wondering if my unborn son will have red hair. (Because there's only so much Netflix I can watch in a day.) I became particularly interested in this question while reading _Red: A History of the Redhead_ by Jacky Colliss Harvey. I decided to do some digging into my genome (and my husband's) to see what I could find out. For the record, my husband has dark blond hair, while mine is red.
 
-### Thoughts on red hair
+## Thoughts on red hair
 
 I view red hair as something of a mixed blessing. Without a doubt, redheads are highly stereotyped and often treated with prejudice, both positively and negatively. Red hair is often objectively beautiful, but also comes with the stigma of standing out, of feeling like an _other_. Harvey's book goes into this subject in detail, and I highly recommend it for any redheads out there looking to make sense of a lifetime of complicated feelings.
 
@@ -16,7 +16,7 @@ While I certainly want my child to be unique and beautiful, I also want to prote
 
 I also want to mention that I hate the term "ginger," especially when used as a noun. But that will be a post for another time. Yes, I'll talk about that South Park episode.
 
-### Some science
+## Some science
 
 I suppose I should say up front that I have next to no real understanding of genetics. I'm mainly going off of what I remember from high school biology, and a few dumbed down explanations from 23andMe and [snpedia.com](https://www.snpedia.com/index.php/Redheads).
 
@@ -26,16 +26,15 @@ Each marker has a few possible configurations of nucleic bases (guanine, thymine
 
 Here's where my husband and I fall for these markers:
 
-#### Me
-
+### Me
 | Gene | Marker | Variant |
 | --- | --- | --- |
 | MC1R | rs1805007 | C/T |
 | MC1R | rs1805008 | C/T |
 | MC1R | i3002507 | G/G |
 
-#### Husband
 
+### Husband
 | Gene | Marker | Variant |
 | --- | --- | --- |
 | MC1R | rs1805007 | C/C |
@@ -46,31 +45,31 @@ The variants in bold are associated with red hair. As you can see, I have two of
 
 The next step was to make some old-fashioned Punnett squares for each marker, to see the possible combinations our child could inherit.
 
-_rs1805007_
-
+### rs1805007
 |  |  |  |  |
 | :---: | :---: | :---: | :---: |
 |  |  | C | T |
 |  | C | CC | CT |
 |  | C | CC | CT |
 
-_rs1805008_
 
+### rs1805008
 |  |  |  |  |
 | :---: | :---: | :---: | :---: |
 |  |  | C | T |
 |  | C | CC | CT |
 |  | C | CC | CT |
 
-_i3002507_
 
+### i3002507
 |  |  |  |  |
 | :---: | :---: | :---: | :---: |
 |  |  | G | G |
 |  | G | GG | GG |
 |  | G | GG | GG |
 
-### Overall likelihood
+
+## Overall likelihood
 
 In order to manifest red hair, a person must have two of these variants. So the outcomes look like this:
 
