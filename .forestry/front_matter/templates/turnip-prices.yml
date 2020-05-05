@@ -71,7 +71,7 @@ fields:
     config:
       min: 
       max: 
-      labelField: 
+      labelField: day
     label: Turnip Price
   config:
     min: 
