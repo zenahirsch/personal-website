@@ -1,4 +1,132 @@
 ---
 label: Turnip Prices
 hide_body: true
-fields: []
+fields:
+- name: turnip_prices
+  type: field_group_list
+  fields:
+  - name: purchase_price
+    type: number
+    label: Purchase Price
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: monday_am
+    type: number
+    label: Monday AM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: monday_pm
+    type: number
+    label: Monday PM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: tuesday_pm
+    type: number
+    label: Tuesday PM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: wednesday_am
+    type: number
+    label: Wednesday AM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: wednesday_pm
+    type: number
+    label: Wednesday PM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: thursday_am
+    type: number
+    label: Thursday AM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: thursday_pm
+    type: number
+    label: Thursday PM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: friday_am
+    type: number
+    label: Friday AM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: friday_pm
+    type: number
+    label: Friday PM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: saturday_am
+    type: number
+    label: Saturday AM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: saturday_pm
+    type: number
+    label: Saturday PM
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Turnip Prices
