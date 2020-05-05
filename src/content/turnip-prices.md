@@ -1,6 +1,6 @@
 ---
 title: Turnip Prices
-path: "/turnip-prices"
+path: "/stalk-market"
 weekly_turnip_price_records:
 - week_starting: 2020-05-03
   purchase_price: 98
