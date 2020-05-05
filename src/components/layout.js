@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const { useBreakpoint } = Grid;
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 const Layout = ({ children }) => {
   const screens = useBreakpoint();
