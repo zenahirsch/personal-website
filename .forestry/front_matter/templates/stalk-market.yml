@@ -33,9 +33,9 @@ fields:
     default: 0
     required: true
     config:
-      min: 
-      max: 
-      step: 
+      min:
+      max:
+      step:
   - name: turnip_prices
     type: field_group_list
     fields:
@@ -60,9 +60,9 @@ fields:
         - Unknown
         source:
           type: simple
-          section: 
-          file: 
-          path: 
+          section:
+          file:
+          path:
       label: Day
     - name: price
       type: number
@@ -70,19 +70,19 @@ fields:
       default: 0
       required: true
       config:
-        min: 
-        max: 
-        step: 
+        min:
+        max:
+        step:
       label: Price
     config:
-      min: 
-      max: 
+      min:
+      max:
       labelField: day
     label: Turnip Prices
   config:
-    min: 
-    max: 
-    labelField: 
+    min:
+    max:
+    labelField: week_starting
   label: Weekly Turnip Price Records
 pages:
 - src/content/stalk-market.md
