@@ -51,15 +51,6 @@ const Layout = ({ children }) => {
           <div style={{ minHeight: 'calc(100vh - 415px)' }}>{children}</div>
         </Col>
       </Row>
-      <Row justify="center" align="middle" gutter={[16, 32]}>
-        <Col xs={20} md={12} style={{ textAlign: 'center' }}>
-          <Text type="secondary">
-            Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>,{' '}
-            <a href="https://ant.design/">Ant Design</a> and{' '}
-            <a href="https://forestry.io/">Forestry.io</a>.
-          </Text>
-        </Col>
-      </Row>
     </div>
   );
 };
