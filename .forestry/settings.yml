@@ -32,8 +32,6 @@ front_matter_path: https://res.cloudinary.com/zena/image/upload/personal-website
 use_front_matter_path: true
 file_template: ":filename:"
 build:
-  preview_env:
-  - ENV=staging
   preview_output_directory: public
   install_dependencies_command: npm install
   preview_docker_image: node:10
