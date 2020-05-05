@@ -1,5 +1,5 @@
 ---
-label: Turnip Prices
+label: Stalk Market
 hide_body: true
 fields:
 - name: path
@@ -7,6 +7,11 @@ fields:
   config:
     required: false
   label: Path
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - name: weekly_turnip_price_records
   type: field_group_list
   fields:
@@ -28,9 +33,9 @@ fields:
     default: 0
     required: true
     config:
-      min: 
-      max: 
-      step: 
+      min:
+      max:
+      step:
   - name: turnip_prices
     type: field_group_list
     fields:
@@ -55,9 +60,9 @@ fields:
         - Unknown
         source:
           type: simple
-          section: 
-          file: 
-          path: 
+          section:
+          file:
+          path:
       label: Day
     - name: price
       type: number
@@ -65,19 +70,19 @@ fields:
       default: 0
       required: true
       config:
-        min: 
-        max: 
-        step: 
+        min:
+        max:
+        step:
       label: Price
     config:
-      min: 
-      max: 
+      min:
+      max:
       labelField: day
     label: Turnip Prices
   config:
-    min: 
-    max: 
-    labelField: 
+    min:
+    max:
+    labelField:
   label: Weekly Turnip Price Records
 pages:
 - src/content/turnip-prices.md

@@ -17,9 +17,9 @@ import SEO from '../components/seo';
 
 const { Title, Paragraph } = Typography;
 
-const TurnipDataTemplate = ({ data, pageContext }) => {
+const StalkMarketPage = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
-  const { filter, minMaxPattern, purchasePrice, weekStarting } = pageContext;
+  const { filter, minMaxPattern, purchasePrice, weekStarting } = data.markdownRemark.fields.acTurnipApiData;
 
   const dayLabels = [
     'Mon AM',
@@ -99,13 +99,24 @@ const TurnipDataTemplate = ({ data, pageContext }) => {
   );
 };
 
-export default TurnipDataTemplate;
+export default StalkMarketPage;
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query {
+    markdownRemark(frontmatter: { path: { eq: "/stalk-market" } }) {
       frontmatter {
         title
+      }
+      fields {
+        acTurnipApiData {
+          filter
+          weekStarting
+          purchasePrice
+          minMaxPattern
+          avgPattern
+          minWeekValue
+          preview
+        }
       }
     }
   }
