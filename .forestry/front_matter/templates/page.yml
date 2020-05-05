@@ -14,4 +14,5 @@ fields:
   label: Title
   description: Title of the page
 pages:
+- src/content/pages/acnh-turnip-prices.md
 - src/content/pages/home.md
