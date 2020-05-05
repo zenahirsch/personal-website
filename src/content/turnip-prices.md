@@ -1,28 +1,9 @@
 ---
 title: Turnip Prices
 path: "/turnip-prices"
-turnip_prices:
-- week_starting: 05/03/2020
-  purchase_price: '98'
-  monday_am: '91'
-  monday_pm: '114'
-  tuesday_pm: 
-  wednesday_am: 
-  wednesday_pm: 
-  thursday_am: 
-  thursday_pm: 
-  friday_am: 
-  friday_pm: 
-  saturday_am: 
-  saturday_pm: 
 weekly_turnip_price_records:
 - week_starting: 2020-05-03
   purchase_price: 98
-  turnip_price:
-  - day: Monday PM
-    price: '114'
-  - day: Monday AM
-    price: '91'
   turnip_prices:
   - day: Monday AM
     price: 91
