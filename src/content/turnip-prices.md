@@ -20,7 +20,10 @@ weekly_turnip_price_records:
   purchase_price: 98
   turnip_price:
   - day: Monday PM
-    price: 114
+    price: '114'
+  - day: Monday AM
+    price: '91'
+  turnip_prices:
   - day: Monday AM
     price: 91
 
