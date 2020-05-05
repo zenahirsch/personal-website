@@ -135,3 +135,5 @@ fields:
     max: 
     labelField: 
   label: Turnip Prices
+pages:
+- src/content/turnip-prices.md
