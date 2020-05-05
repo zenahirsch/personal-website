@@ -26,7 +26,7 @@ sections:
 - type: document
   path: src/content/turnip-prices.md
   label: Turnip Prices
-upload_dir: ''
+upload_dir: personal-website
 public_path: https://res.cloudinary.com/zena/image/upload/personal-website/c_scale,w_auto:100,dpr_auto
 front_matter_path: https://res.cloudinary.com/zena/image/upload/personal-website
 use_front_matter_path: true
