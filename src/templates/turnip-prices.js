@@ -15,7 +15,7 @@ import {
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 const TurnipDataTemplate = ({ data, pageContext }) => {
   const { title } = data.markdownRemark.frontmatter;
