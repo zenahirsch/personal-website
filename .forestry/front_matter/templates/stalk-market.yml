@@ -1,6 +1,5 @@
 ---
 label: Stalk Market
-hide_body: true
 fields:
 - name: path
   type: text
