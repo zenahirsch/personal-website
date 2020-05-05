@@ -10,9 +10,18 @@ fields:
 - name: turnip_prices
   type: field_group_list
   fields:
+  - name: week_starting
+    type: datetime
+    label: Week Starting
+    description: The Sunday this week began on.
+    config:
+      required: true
+      date_format: 
+      time_format: 
+      display_utc: false
   - name: purchase_price
     type: number
-    label: Purchase Price
+    label: Purchase Price (Sunday)
     description: ''
     default: 0
     required: true
@@ -134,6 +143,6 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Turnip Prices
+  label: Weekly Turnip Prices
 pages:
 - src/content/turnip-prices.md
