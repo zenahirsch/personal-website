@@ -143,6 +143,6 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Weekly Turnip Prices
+  label: Weekly Turnip Price Records
 pages:
 - src/content/turnip-prices.md
