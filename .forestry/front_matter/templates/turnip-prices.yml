@@ -16,10 +16,11 @@ fields:
     description: The Sunday this week began on.
     config:
       required: true
-      date_format: 
-      time_format: 
+      date_format: MM/DD/YYYY
+      time_format: h:mm A ZZ
       display_utc: false
       export_format: MM/DD/YYYY
+    default: now
   - name: purchase_price
     type: number
     label: Purchase Price (Sunday)
