@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url: 
+webhook_url:
 sections:
 - type: directory
   path: src/content/posts
@@ -24,8 +24,8 @@ sections:
   path: src/content/faq.md
   label: FAQ
 - type: document
-  path: src/content/turnip-prices.md
-  label: Turnip Prices
+  path: src/content/stalk-market.md
+  label: Stalk Market
 upload_dir: personal-website
 public_path: https://res.cloudinary.com/zena/image/upload/c_limit,h_512,w_512
 front_matter_path: https://res.cloudinary.com/zena/image/upload/personal-website
