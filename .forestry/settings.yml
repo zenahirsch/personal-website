@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: document
+  path: src/content/turnip-prices.md
+  label: Turnip Prices
 - type: directory
   path: src/content/posts
   label: Posts
