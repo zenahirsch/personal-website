@@ -16,6 +16,11 @@ turnip_prices:
   saturday_am: 
   saturday_pm: 
 weekly_turnip_price_records:
+- week_starting: 04/26/2020
+  purchase_price: 100
+  turnip_prices:
+  - day: Monday AM
+    price: 90
 - week_starting: 05/03/2020
   purchase_price: 98
   turnip_price:
