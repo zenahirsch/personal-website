@@ -34,29 +34,30 @@ fields:
   - name: turnip_price
     type: field_group_list
     fields:
-    - name: date
-      type: datetime
-      label: Date
-      description: ''
-      config:
-        required: false
-        date_format: 
-        time_format: 
-        display_utc: false
-    - name: am_pm
+    - name: day
       type: select
-      default: AM
+      default: Monday AM
       config:
         required: true
         options:
-        - AM
-        - PM
+        - Monday AM
+        - Monday PM
+        - Tuesday AM
+        - Tuesday PM
+        - Wednesday AM
+        - Wednesday PM
+        - Thursday AM
+        - Thursday PM
+        - Friday AM
+        - Friday PM
+        - Saturday AM
+        - Saturday PM
         source:
           type: simple
           section: 
           file: 
           path: 
-      label: AM/PM
+      label: Day
     - name: price
       type: number
       description: ''
