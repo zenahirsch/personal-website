@@ -20,7 +20,7 @@ fields:
       time_format: h:mm A ZZ
       display_utc: false
       export_format: MM/DD/YYYY
-    default: now
+    default: ''
   - name: purchase_price
     type: number
     label: Purchase Price (Sunday)
