@@ -43,6 +43,20 @@ fields:
         date_format: 
         time_format: 
         display_utc: false
+    - name: am_pm
+      type: select
+      default: AM
+      config:
+        required: true
+        options:
+        - AM
+        - PM
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: AM/PM
     - name: price
       type: number
       description: ''
