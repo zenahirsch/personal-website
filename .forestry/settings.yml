@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/content/turnip-prices.md
   label: Turnip Prices
-  match: "**/*"
 - type: directory
   path: src/content/posts
   label: Posts
