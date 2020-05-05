@@ -31,7 +31,7 @@ fields:
       min: 
       max: 
       step: 
-  - name: turnip_price
+  - name: turnip_prices
     type: field_group_list
     fields:
     - name: day
@@ -72,7 +72,7 @@ fields:
       min: 
       max: 
       labelField: day
-    label: Turnip Price
+    label: Turnip Prices
   config:
     min: 
     max: 
