@@ -2,10 +2,10 @@
 title: Turnip Prices
 path: "/turnip-prices"
 turnip_prices:
-- week_starting: 2020-05-03T20:32:26-04:00
-  purchase_price: 
-  monday_am: 
-  monday_pm: 
+- week_starting: 05/03/2020
+  purchase_price: 98
+  monday_am: 91
+  monday_pm: 114
   tuesday_pm: 
   wednesday_am: 
   wednesday_pm: 
