@@ -5,6 +5,8 @@ weekly_turnip_price_records:
 - week_starting: 2020-05-03
   purchase_price: 98
   turnip_prices:
+  - day: Tuesday PM
+    price: 143
   - day: Monday AM
     price: 91
   - day: Monday PM
