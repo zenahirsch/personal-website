@@ -19,7 +19,12 @@ const { Title, Paragraph } = Typography;
 
 const StalkMarketPage = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
-  const { filter, minMaxPattern, purchasePrice, weekStarting } = data.markdownRemark.fields.acTurnipApiData;
+  const {
+    filter,
+    minMaxPattern,
+    purchasePrice,
+    weekStarting,
+  } = data.markdownRemark.fields.acTurnipApiData;
 
   const dayLabels = [
     'Mon AM',
@@ -66,7 +71,7 @@ const StalkMarketPage = ({ data }) => {
       </Paragraph>
       <br />
       <Title level={4} style={{ textAlign: 'center' }}>
-        Stalk Market Predictions (week of {weekStarting})
+        Stalk market predictions for week of {weekStarting}
       </Title>
       <ResponsiveContainer width="100%" height={325}>
         <ComposedChart data={chartData}>
@@ -110,7 +115,7 @@ export const pageQuery = graphql`
       fields {
         acTurnipApiData {
           filter
-          weekStarting
+          weekStarting(formatString: "dddd, MMMM D")
           purchasePrice
           minMaxPattern
           avgPattern

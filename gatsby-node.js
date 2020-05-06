@@ -111,7 +111,7 @@ exports.onCreateNode = async ({ node, actions: { createNodeField } }) => {
         preview: resultData.preview,
         weekStarting: week_starting,
         purchasePrice: purchase_price,
-      }
+      },
     });
   }
 };
