@@ -26,6 +26,12 @@ sections:
 - type: document
   path: src/content/stalk-market.md
   label: Stalk Market
+- type: heading
+  label: Config
+- type: document
+  path: package.json
+  label: Scripts
+  match: "**/*"
 upload_dir: personal-website
 public_path: https://res.cloudinary.com/zena/image/upload/c_limit,h_512,w_512
 front_matter_path: https://res.cloudinary.com/zena/image/upload/personal-website
