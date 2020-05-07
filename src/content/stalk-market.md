@@ -17,5 +17,7 @@ weekly_turnip_price_records:
     price: 140
   - day: Wednesday PM
     price: 80
+  - day: Thursday AM
+    price: 75
 
 ---
