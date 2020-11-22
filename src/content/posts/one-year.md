@@ -5,7 +5,7 @@ title: One year ago today
 summary: From blastocyst to three months old.
 
 ---
-![](https://res.cloudinary.com/zena/image/upload/v1606013002/personal-website/IMG_3851_pvjmo0.jpg)
+![](https://res.cloudinary.com/zena/image/upload/v1606014646/personal-website/IMG_3851_rm5sev.jpg)
 
 What a difference a year makes.
 
