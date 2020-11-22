@@ -21,6 +21,10 @@ fields:
 - type: text
   name: summary
   label: Summary
+- name: published
+  type: boolean
+  label: Published
+  description: Is this blog post published?
 pages:
 - src/content/pages/test.md
 - src/content/posts/one-year.md
