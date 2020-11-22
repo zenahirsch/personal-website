@@ -25,6 +25,7 @@ fields:
   type: boolean
   label: Published
   description: Is this blog post published?
+  default: false
 pages:
 - src/content/pages/test.md
 - src/content/posts/one-year.md
