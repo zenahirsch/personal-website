@@ -5,9 +5,9 @@ title: One year ago today
 summary: From blastocyst to three months old.
 
 ---
-What a difference a year makes.
+![](https://res.cloudinary.com/zena/image/upload/v1606013002/personal-website/IMG_3851_pvjmo0.jpg)
 
-![](https://res.cloudinary.com/zena/image/upload/v1606010621/personal-website/IMG_3878_sntffr.jpg)
+What a difference a year makes.
 
 A year ago today, Aaron and I transferred our third embryo conceived via IVF. Our hopes weren’t high; our previous two attempts had failed, following years of trying to conceive naturally and with other assisted reproductive technologies. A previous attempt had resulted in an ectopic pregnancy that left me with only one Fallopian tube, resulted in a months-long delay in treatment, and left us emotionally depleted (by the way, this was around the time that Republicans in Ohio introduced a bill that would require doctors to “reimplant” an ectopic pregnancy in a woman’s uterus, which is impossible). Blood tests showed that I was experiencing a prematurely declining ovarian reserve. The odds didn’t seem in our favor. I felt hopeless and defective, especially as I watched friend after friend announce their pregnancies on Facebook.
 
@@ -23,10 +23,12 @@ Thankfully, we did have coverage for IVF, though we had to jump through many hoo
 
 _If you have the means and would like to make a donation to the fund, you can send a check directly to The Fertility Center (put “Family Building Fund” in the memo):_
 
-    The Fertility Center
-    Attn: Kathleen Wade
-    3230 Eagle Park Drive NE, Suite 100
-    Grand Rapids, MI 49525
+<address>
+The Fertility Center<br />
+Attn: Kathleen Wade<br />
+3230 Eagle Park Drive NE, Suite 100<br />
+Grand Rapids, MI 49525
+</address>
 
 _100% of all donations go directly to patients in need. You can read more about the Family Building Fund_ [_here_](https://www.fertilitycentermi.com/family-building-fund/)_._
 

@@ -32,7 +32,7 @@ sections:
   path: package.json
   label: Scripts
 upload_dir: personal-website
-public_path: https://res.cloudinary.com/zena/image/upload/w_100
+public_path: https://res.cloudinary.com/zena/image/upload/h_300
 front_matter_path: https://res.cloudinary.com/zena/image/upload/personal-website
 use_front_matter_path: true
 file_template: ":filename:"
