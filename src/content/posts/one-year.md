@@ -19,17 +19,13 @@ Thankfully, we did have coverage for IVF, though we had to jump through many hoo
 
 Thank you to everyone who supported us before, during, and after our fertility journey.
 
-\***
+_If you have the means and would like to make a donation to the fund, you can send a check directly to The Fertility Center (put “Family Building Fund” in the memo):_
 
-If you have the means and would like to make a donation to the fund, you can send a check directly to The Fertility Center (put “Family Building Fund” in the memo):
+    The Fertility Center
+    Attn: Kathleen Wade
+    3230 Eagle Park Drive NE, Suite 100
+    Grand Rapids, MI 49525
 
-The Fertility Center
-Attn: Kathleen Wade
-3230 Eagle Park Drive NE, Suite 100
-Grand Rapids, MI 49525
+_100% of all donations go directly to patients in need. You can read more about the Family Building Fund_ [_here_](https://www.fertilitycentermi.com/family-building-fund/)_._
 
-Alternatively, for those who can’t find their checkbooks (you know who you are), you can send me cash via Venmo and I will send in a check for you.
-
-100% of all donations go directly to patients in need. You can read more about the Family Building Fund [here](https://www.fertilitycentermi.com/family-building-fund/).
-
-Thank you!
+_Thank you!_
