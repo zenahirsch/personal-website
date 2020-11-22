@@ -1,7 +1,7 @@
 ---
 date: 2020-11-22T00:00:00-05:00
-slug: one-year-ago
-title: One year ago
+slug: one-year-ago-today
+title: One year ago today
 summary: From blastocyst to three months old.
 
 ---
