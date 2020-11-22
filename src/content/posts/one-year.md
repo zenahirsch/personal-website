@@ -5,9 +5,7 @@ title: One year ago
 summary: From blastocyst to three months old.
 
 ---
-What a difference a year makes. From blastocyst to three months old.
-
-![A smiling baby next to a photograph of a day 5 embryo](https://res.cloudinary.com/zena/image/upload/c_limit,h_512,w_512/v1606008764/personal-website/IMG_3878_onbahx.jpg)
+What a difference a year makes.
 
 A year ago today, Aaron and I transferred our third embryo conceived via IVF. Our hopes weren’t high; our previous two attempts had failed, following years of trying to conceive naturally and with other assisted reproductive technologies. A previous attempt had resulted in an ectopic pregnancy that left me with only one Fallopian tube, resulted in a months-long delay in treatment, and left us emotionally depleted (by the way, this was around the time that Republicans in Ohio introduced a bill that would require doctors to “reimplant” an ectopic pregnancy in a woman’s uterus, which is impossible). Blood tests showed that I was experiencing a prematurely declining ovarian reserve. The odds didn’t seem in our favor. I felt hopeless and defective, especially as I watched friend after friend announce their pregnancies on Facebook.
 
