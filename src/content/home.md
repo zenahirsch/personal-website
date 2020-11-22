@@ -1,5 +1,6 @@
 ---
-title: "Home"
+title: Hello
 path: "/"
+
 ---
-This is the content of the home.
+My name is Zena. I work as a web developer at [Vimeo](https://vimeo.com). Nice to meet you!
