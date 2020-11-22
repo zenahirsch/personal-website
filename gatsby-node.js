@@ -104,7 +104,7 @@ exports.onCreateNode = async ({ node, actions: { createNodeField } }) => {
       name: 'acTurnipApiData',
       node,
       value: {
-        filter: resultData.filter,
+        filter: resultData.filters,
         minMaxPattern: resultData.minMaxPattern,
         avgPattern: resultData.avgPattern,
         minWeekValue: resultData.minWeekValue,
