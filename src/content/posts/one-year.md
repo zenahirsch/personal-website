@@ -1,5 +1,5 @@
 ---
-date: 2020-11-22T00:00:00-05:00
+date: 2020-11-22T00:00:00.000-05:00
 slug: one-year-ago-today
 title: One year ago today
 summary: From blastocyst to three months old.
@@ -14,6 +14,8 @@ A year ago today, Aaron and I transferred our third embryo conceived via IVF. Ou
 The process up to that point had been an intense emotional rollercoaster of hope, anxiety, endless waiting, and deep disappointment. Our schedules were tied to a rigid treatment plan of ultrasounds and injections, forcing us to miss work and cancel social events and vacations. I had bruises all over my belly and butt from the needles. We wrote checks in goggling amounts, spent hours and days on hold with our insurance company, and bought pack after pack of pregnancy tests. They always came back negative, even though I inverted the colors of the pictures I took looking for the faint impression of a line. My camera roll was full of these pictures.
 
 I don’t believe in miracles, karma, or prayers (though I was touched by those who offered them), but when I finally saw the line appear three days later, I felt an overwhelming sense of gratitude. If it weren’t for our scientific and technological advancements, our human intelligence, that day probably would never have come for me and Aaron. I remember putting the test down and picking up my little dog and whispering in his ear, “It worked! It WORKED!”
+
+![](https://res.cloudinary.com/zena/image/upload/v1606014167/personal-website/IMG_3742_vbbeis.jpg)
 
 A year later, our beautiful boy Milo is with us, and I am still deeply grateful every time I see his (objectively perfect) little face. Since his birth, I’ve never doubted that our journey was worth it. But I’ve also struggled with a sense of guilt, because not everyone’s IVF story has a happy ending. Worse, many IVF stories don’t even have a beginning. Reproductive technology is prohibitively (and in my opinion, needlessly) expensive in this country. It is rare for insurance to cover IVF, especially here in Michigan. Our nurses were usually surprised to hear we had coverage at all. Even those lucky enough to have insurance often do not have coverage for assisted reproductive technologies. If they do have coverage, it is often only for one or two cycles. Successful IVF often takes many attempts to work. It isn’t fair. It isn’t fair.
 
