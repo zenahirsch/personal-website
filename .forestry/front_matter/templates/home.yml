@@ -1,6 +1,6 @@
 ---
 label: Home
-hide_body: true
+hide_body: false
 fields:
 - type: text
   name: title
@@ -8,23 +8,3 @@ fields:
 - type: text
   name: path
   label: path
-- type: field_group_list
-  name: weekly_turnip_price_records
-  label: weekly_turnip_price_records
-  fields:
-  - type: datetime
-    name: week_starting
-    label: week_starting
-  - type: number
-    name: purchase_price
-    label: purchase_price
-  - type: field_group_list
-    name: turnip_prices
-    label: turnip_prices
-    fields:
-    - type: text
-      name: day
-      label: day
-    - type: number
-      name: price
-      label: price
