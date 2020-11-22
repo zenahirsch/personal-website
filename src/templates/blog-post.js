@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data }) => {
       <SEO title={frontmatter.title} description={frontmatter.summary} />
       <Text type="secondary">{frontmatter.date}</Text>
       <Title level={3}>{frontmatter.title}</Title>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="blog-content" dangerouslySetInnerHTML={{ __html: html }} />
       <Divider>
         <FireTwoTone twoToneColor="#ffd591" />
       </Divider>

@@ -1,3 +1,7 @@
 body {
   height: auto;
 }
+
+.blog-content img {
+  max-width: 100%;
+}
