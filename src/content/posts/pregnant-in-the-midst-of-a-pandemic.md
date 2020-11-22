@@ -4,6 +4,7 @@ date: 2020-04-25T04:00:00.000+00:00
 title: Pregnant in the midst of a pandemic
 summary: I'm pregnant. There's a pandemic going on. And it's totally fine.
 slug: pregnant-in-the-midst-of-a-pandemic
+published: true
 
 ---
 I'm pregnant. There's a pandemic going on. And it's totally fine.
