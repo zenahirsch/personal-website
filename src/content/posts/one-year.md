@@ -7,6 +7,8 @@ summary: From blastocyst to three months old.
 ---
 What a difference a year makes.
 
+![](https://res.cloudinary.com/zena/image/upload/v1606010621/personal-website/IMG_3878_sntffr.jpg)
+
 A year ago today, Aaron and I transferred our third embryo conceived via IVF. Our hopes weren’t high; our previous two attempts had failed, following years of trying to conceive naturally and with other assisted reproductive technologies. A previous attempt had resulted in an ectopic pregnancy that left me with only one Fallopian tube, resulted in a months-long delay in treatment, and left us emotionally depleted (by the way, this was around the time that Republicans in Ohio introduced a bill that would require doctors to “reimplant” an ectopic pregnancy in a woman’s uterus, which is impossible). Blood tests showed that I was experiencing a prematurely declining ovarian reserve. The odds didn’t seem in our favor. I felt hopeless and defective, especially as I watched friend after friend announce their pregnancies on Facebook.
 
 The process up to that point had been an intense emotional rollercoaster of hope, anxiety, endless waiting, and deep disappointment. Our schedules were tied to a rigid treatment plan of ultrasounds and injections, forcing us to miss work and cancel social events and vacations. I had bruises all over my belly and butt from the needles. We wrote checks in goggling amounts, spent hours and days on hold with our insurance company, and bought pack after pack of pregnancy tests. They always came back negative, even though I inverted the colors of the pictures I took looking for the faint impression of a line. My camera roll was full of these pictures.
@@ -17,7 +19,7 @@ A year later, our beautiful boy Milo is with us, and I am still deeply grateful 
 
 Thankfully, we did have coverage for IVF, though we had to jump through many hoops to access it (and even now, we still haven’t received our full benefits, thanks to that company’s bureaucratic nonsense). Still, we were lucky and privileged. Today, we want to pay it forward by contributing to our clinic’s Family Building Fund, which provides financial assistance to families who cannot afford IVF. I see this as a stopgap measure until the day when our country’s healthcare system can make these treatments readily available to those who need them. Until then, we want to do what we can for families who are less fortunate, but equally deserving of the joy of parenthood.
 
-Thank you to everyone who supported us before, during, and after our fertility journey.
+**Thank you to everyone who supported us before, during, and after our fertility journey.**
 
 _If you have the means and would like to make a donation to the fund, you can send a check directly to The Fertility Center (put “Family Building Fund” in the memo):_
 
