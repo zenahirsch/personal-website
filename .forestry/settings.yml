@@ -21,6 +21,10 @@ sections:
 - type: heading
   label: Single Pages
 - type: document
+  path: src/content/home.md
+  label: Home
+  match: "**/*"
+- type: document
   path: src/content/faq.md
   label: FAQ
 - type: document
