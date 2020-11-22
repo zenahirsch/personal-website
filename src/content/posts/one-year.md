@@ -1,8 +1,8 @@
 ---
-date: 2020-11-21T20:23:29-05:00
-slug: one-year
-title: One year
-summary: ''
+date: 2020-11-22T00:00:00-05:00
+slug: one-year-ago
+title: One year ago
+summary: From blastocyst to three months old.
 
 ---
 What a difference a year makes. From blastocyst to three months old.
