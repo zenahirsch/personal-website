@@ -1,9 +1,10 @@
 ---
-date: 2020-05-04T16:25:09-04:00
+date: 2020-05-04T16:25:09.000-04:00
 slug: predicting-the-color-of-my-sons-hair-using-amateur-science
 title: Predicting the color of my son's hair using amateur science
 summary: I don't know anything about genetics, so obviously here's an in-depth analysis
   of my baby's potential genotype.
+published: true
 
 ---
 Lately, I've been wondering if my unborn son will have red hair, because there's only so much Netflix I can watch in a day. I became particularly interested in this question while reading _Red: A History of the Redhead_ by Jacky Colliss Harvey. I decided to do some digging into my genome (and my husband's) to see what I could find out. For the record, my husband has dark blond hair, while mine is red.
