@@ -28,6 +28,7 @@ fields:
   default: false
 pages:
 - src/content/pages/test.md
+- src/content/posts/i-m-canceling-dr.seuss.md
 - src/content/posts/one-year.md
 - src/content/posts/predicting-the-color-of-my-son-s-hair-using-amateur-science.md
 - src/content/posts/pregnant-in-the-midst-of-a-pandemic.md
