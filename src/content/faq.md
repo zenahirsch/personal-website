@@ -21,7 +21,8 @@ faq:
     * Chrono Trigger
     * Earthbound
     * Legend of Zelda: Ocarina of Time
-    * Age of Empires III
+    * MTG Arena
+    * Age of Empires
     * Cities: Skylines
     * Bravely Default
     * World of Warcraft
