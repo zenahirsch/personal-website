@@ -27,7 +27,6 @@ fields:
   description: Is this blog post published?
   default: false
 pages:
-- src/content/pages/bananas.md
 - src/content/pages/test.md
 - src/content/posts/one-year.md
 - src/content/posts/predicting-the-color-of-my-son-s-hair-using-amateur-science.md

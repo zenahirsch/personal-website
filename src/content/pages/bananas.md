@@ -1,5 +1,5 @@
 ---
-date: 
+date: ''
 slug: ''
 title: Bananas!
 summary: ''
