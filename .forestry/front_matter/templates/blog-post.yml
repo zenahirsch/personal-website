@@ -27,6 +27,7 @@ fields:
   description: Is this blog post published?
   default: false
 pages:
+- src/content/pages/bananas.md
 - src/content/pages/test.md
 - src/content/posts/i-m-canceling-dr.seuss.md
 - src/content/posts/one-year.md
