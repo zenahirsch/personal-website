@@ -1,12 +1,16 @@
 ---
-path: "/blog/pregnant-in-the-midst-of-a-pandemic"
-date: 2020-04-25T04:00:00.000+00:00
+path: /blog/pregnant-in-the-midst-of-a-pandemic
+date: 2020-04-25T04:00:00.000Z
 title: Pregnant in the midst of a pandemic
 summary: I'm pregnant. There's a pandemic going on. And it's totally fine.
 slug: pregnant-in-the-midst-of-a-pandemic
 published: true
-
+_template: blog_post
 ---
+
+
+
+
 I'm pregnant. There's a pandemic going on. And it's totally fine.
 
 Don't get me wrong, this pandemic sucks, and sucks _very badly_ for many people. It needs to end soon, or we're all going to lose our damn minds (and for many, their livelihoods and/or lives). But as far as my pregnancy goes, things have been... fine. Good, even. Turns out, sitting around watching Netflix and eating frozen taquitos is more or less what I'd want to be doing right now, anyway.

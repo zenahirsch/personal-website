@@ -1,11 +1,15 @@
 ---
-date: 2020-11-22T00:00:00.000-05:00
+date: 2020-11-22T05:00:00.000Z
 slug: three-hundred-sixty-five-days-later
 title: Three hundred and sixty-five days later
 summary: What a difference a year makes.
 published: true
-
+_template: blog_post
 ---
+
+
+
+
 ![](https://res.cloudinary.com/zena/image/upload/v1606019492/personal-website/IMG_3851_bwg0kp.jpg)
 
 What a difference a year makes.
