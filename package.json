@@ -29,32 +29,38 @@
   ],
   "dependencies": {
     "@ant-design/icons": "^4.0.6",
-    "antd": "^4.1.4",
+    "antd": "^5.5.2",
     "gatsby": "^5.10.0",
     "gatsby-image": "^2.3.4",
     "gatsby-plugin-antd": "^2.2.0",
-    "gatsby-plugin-less": "^3.1.4",
+    "gatsby-plugin-less": "^7.10.0",
     "gatsby-plugin-manifest": "^5.10.0",
-    "gatsby-plugin-offline": "^3.1.4",
-    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-offline": "^6.10.0",
+    "gatsby-plugin-react-helmet": "^6.10.0",
     "gatsby-plugin-sharp": "^5.10.0",
-    "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-remark": "^6.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
-    "less": "^3.11.1",
+    "less": "^3.9.0",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.0.0",
+    "react-textarea-autosize": "^8.4.1",
     "recharts": "^1.8.5",
     "remark": "^12.0.0",
     "remark-html": "^11.0.1",
+    "scheduler": "^0.23.0",
     "sharp": "^0.32.1",
+    "slate": "^0.94.1",
+    "slate-history": "^0.93.0",
     "tinacms": "^1.5.8",
     "typeface-nunito": "^1.1.3"
   },
   "devDependencies": {
     "@tinacms/cli": "^1.5.16",
+    "@types/less": "^3",
+    "@types/scheduler": "^0",
     "import-sort-style-module": "^6.0.0",
     "prettier": "^2.0.5",
     "prettier-plugin-import-sort": "^0.0.4",
@@ -64,5 +70,8 @@
     ".js, .jsx": {
       "style": "module"
     }
+  },
+  "volta": {
+    "node": "18.16.0"
   }
 }

@@ -28,7 +28,7 @@ export default defineConfig({
       {
         format: "md",
         label: "Posts",
-        name: "posts",
+        name: "blog_post",
         path: "src/content/posts",
         match: {
           include: "**/*",
@@ -47,7 +47,7 @@ export default defineConfig({
       {
         format: "md",
         label: "Pages",
-        name: "pages",
+        name: "page",
         path: "src/content/pages",
         match: {
           include: "**/*",
