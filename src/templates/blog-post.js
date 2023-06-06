@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const { Title, Text } = Typography;
 
@@ -14,7 +14,7 @@ const BlogPostTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={frontmatter.title} description={frontmatter.summary} />
+      <Seo title={frontmatter.title} description={frontmatter.summary} />
       <Text type="secondary">{frontmatter.date}</Text>
       <Title level={3}>{frontmatter.title}</Title>
       <div className="blog-content" dangerouslySetInnerHTML={{ __html: html }} />

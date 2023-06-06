@@ -68,6 +68,8 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+.yarn
+
 # Local Netlify folder
 .netlify
 node_modules

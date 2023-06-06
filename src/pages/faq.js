@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const { Title } = Typography;
 
@@ -12,7 +12,7 @@ const FAQPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="FAQ" />
+      <Seo title="FAQ" />
       {faqs.map(({ question, answer }, index) => (
         <div key={index}>
           <Title level={4}>{question}</Title>

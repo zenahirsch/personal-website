@@ -225,30 +225,6 @@ export default defineConfig({
           },
         ],
       },
-      {
-        format: "json",
-        label: "Scripts",
-        name: "scripts",
-        path: "/",
-        ui: {
-          allowedActions: {
-            create: false,
-            delete: false,
-          },
-        },
-        match: {
-          include: "package",
-        },
-        fields: [
-          {
-            name: "dummy",
-            label: "Dummy field",
-            type: "string",
-            description:
-              "This is a dummy field, please replace it with the fields you want to edit. See https://tina.io/docs/schema/ for more info",
-          },
-        ],
-      },
     ],
   },
 });

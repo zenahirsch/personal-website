@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const { Paragraph } = Typography;
 
@@ -12,7 +12,7 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Blog" />
+      <Seo title="Blog" />
       <List
         itemLayout="vertical"
         dataSource={posts}

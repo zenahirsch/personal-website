@@ -2,7 +2,7 @@ import { Alert, Button, Form, Input, Space, Typography } from 'antd';
 import React, { useState } from 'react';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const { Paragraph } = Typography;
 
@@ -64,7 +64,7 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <SEO title="Contact" />
+      <Seo title="Contact" />
       <Paragraph>
         Feel free to reach out if you'd like to chat! I'll do my best to respond
         to messages as soon as possible. You can also find me on{' '}

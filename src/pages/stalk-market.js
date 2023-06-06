@@ -13,7 +13,7 @@ import {
 } from 'recharts';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const { Title, Paragraph } = Typography;
 
@@ -50,7 +50,7 @@ const StalkMarketPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description="ACNH Turnip Prices graph" />
+      <Seo title={title} description="ACNH Turnip Prices graph" />
       <Title level={3}>{title}</Title>
       <Paragraph>
         Like most people during this quarantine, I've been playing a lot of{' '}

@@ -2,7 +2,7 @@ import { Typography } from 'antd';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const { Title } = Typography;
 
@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} />
+      <Seo title={title} />
       <Title level={3}>{title}</Title>
       <div className="home-content" dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>

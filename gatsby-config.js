@@ -46,15 +46,5 @@ module.exports = {
         style: true,
       },
     },
-    {
-      resolve: 'gatsby-plugin-less',
-      options: {
-        modifyVars: {
-          'primary-color': '@orange-6',
-          'font-family': 'Nunito, sans-serif',
-        },
-        javascriptEnabled: true,
-      },
-    },
   ],
 };
