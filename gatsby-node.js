@@ -2,6 +2,11 @@ const path = require('path');
 const fetch = require('node-fetch');
 const remark = require('remark');
 const remarkHTML = require('remark-html');
+const express = require("express");
+
+exports.onCreateDevServer = ({ app }) => {
+  app.use("/admin", express.static("public/admin"));
+};
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
